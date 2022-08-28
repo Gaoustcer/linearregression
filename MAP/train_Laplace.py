@@ -2,7 +2,7 @@ from MLE.linearmodel import model
 from Data.dataset import lineardataset
 from torch.utils.tensorboard import SummaryWriter
 
-writer = SummaryWriter('./log/MAPGaussian')
+writer = SummaryWriter('./log/MAPLAplace')
 N = 16
 import numpy as np
 from torch.optim import Adam
