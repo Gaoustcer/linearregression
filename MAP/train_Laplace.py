@@ -31,8 +31,8 @@ def _train():
             netparameter = []
             for m_ in net.parameters():
                 netparameter.append(m_)
-            loss += torch.norm(netparameter[0],2)
-            loss += torch.norm(netparameter[1],2)
+            loss += torch.norm(netparameter[0],1)
+            loss += torch.norm(netparameter[1],1)
             loss.backward()
             optimize.step()
         testtensor = np.random.random([32,N])
